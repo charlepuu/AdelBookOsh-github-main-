@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"> <!-- кодировка -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- адаптив -->
+    <title>AdelBookOsh — Ремарк</title> <!-- название страницы -->
+    <link rel="stylesheet" href="style.css"> <!-- подключение CSS -->
+</head>
+
+<body> <!-- всё содержимое страницы -->
+
+<!-- ============ НАВИГАЦИЯ ============ -->
+<nav class="navbar"> <!-- верхнее меню -->
+    <ul class="nav-list"> <!-- список ссылок -->
+        <li><a href="AboutUs.html" class="nav-link" target="_blank">О нас</a></li> <!-- открывает в новой вкладке -->
+        <li><a href="Shop.html" class="nav-link" target="_blank">Магазин</a></li>
+        <li><a href="contact.html" class="nav-link" target="_blank">Контакты</a></li>
+        <li><a href="Our-services.html" class="nav-link" target="_blank">Наши услуги</a></li>
+    </ul>
+</nav>
+
+<!-- ============ ГЛАВНЫЙ ГЕРО-БЛОК ============ -->
+<section class="hero-section"> <!-- фон + текст -->
+    <p class="small-text">Ремарк — для тех кто думает сердцем</p> <!-- верхняя строка -->
+    <h1>Коллекция книг Эриха Марии Ремарка</h1> <!-- главный заголовок -->
+    <h1>закажи свои истории о любви, войне и человечности.</h1> <!-- подзаголовок -->
+
+</section>
+
+<!-- ================== ПОДВАЛ ================== -->
+<footer class="footer"> <!-- контейнер подвала -->
+
+    <!-- Левая часть подвала -->
+    <div class="footer-left">
+        <p>
+            Эрих Мария Ремарк © 2025 <!-- авторские права -->
+        </p>
+    </div>
+
+    <!-- Правая часть подвала -->
+    <div class="footer-right">
+
+        <!-- Телефон и ссылка на звонок -->
+        <p>
+            Тел.:
+            <a href="tel:+996779870791">+996 779 870 791</a>
+            <!-- tel: позволяет пользователю нажать и сразу позвонить -->
+            |
+            <a href="http://remark-book.tilda.ws" target="_blank">Онлайн-магазин_Ош</a>
+            <!-- ссылка на магазин, открывается в новой вкладке -->
+        </p>
+
+        <!-- Электронная почта и ссылка для отправки письма -->
+        <p>
+            Почта:
+            <a href="mailto:adeliamurzalieva@gmail.com">
+                adeliamurzalieva@gmail.com
+            </a>
+            <!-- mailto: открывает почтовую программу для отправки письма -->
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ============ РЕГИСТРАЦИЯ (ПОСЛЕ ПОДВАЛА) ============ -->
+<section class="register-section"> <!-- Секция для размещения формы регистрации -->
+    
+    <h2>Регистрация</h2> <!-- Заголовок секции -->
+    <div class="register-box"> <!-- Контейнер самой формы -->
+
+        <input type="text" id="fullname" placeholder="Ваше имя">              <!-- Поле для ввода полного имени пользователя -->
+        <input type="email" id="email" placeholder="Email">                   <!-- Поле для ввода почты -->
+        <input type="password" id="password" placeholder="Пароль">            <!-- Поле для ввода пароля -->
+        <input type="password" id="password2" placeholder="Повторите пароль"> <!-- Поле для подтверждения пароля -->
+
+        <button onclick="register()">Зарегистрироваться</button>              <!-- Кнопка, которая вызывает функцию register() при клике -->
+        <p id="regResult"></p>                                                <!-- Элемент, в который будут выводиться сообщения об ошибках или успехе -->
+
+    </div>
+
+<!-- ЛИНИЯ ПОСЛЕ ВСЕЙ РЕГИСТРАЦИИ -->
+    <div class="register-divider-bottom"></div>
+
+</section>
+
+<script src="script.js"></script> <!-- Подключение файла с JavaScript-кодом -->
+
+
+ <!-- вставляем сюда регистрацию -->
+<section class="register-section">...</section>
+
+</body>
+</html>
